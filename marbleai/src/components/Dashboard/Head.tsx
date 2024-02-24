@@ -1,7 +1,10 @@
 import { FaPencilAlt } from "react-icons/fa";
 import { BiSolidUpArrow } from "react-icons/bi";
 
+
 const Head = () => {
+
+
   return (
     <div className="border-2 w-[90%] m-auto px-4 py-6 flex flex-col  sm:flex-row gap-5 border-red-700">
      
@@ -69,8 +72,6 @@ const Head = () => {
         </div>
       </div>
 
-
-      
     </div>
   );
 };
