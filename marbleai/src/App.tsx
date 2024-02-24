@@ -1,14 +1,17 @@
 
 import './App.css'
+import Dashboard from './components/Dashboard/Dashboard'
+import { Navbar } from './components/Navbar/Navbar'
 
 function App() {
 
 
   return (
     <>
-      <div className='border-2 h-[50vh] border-red-700'>
-          
-          
+      <div className=' border-red-700'>
+          <Navbar/>
+          <Dashboard/>
+
       </div>
     </>
   )
