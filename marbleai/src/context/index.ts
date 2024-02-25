@@ -1,43 +1,5 @@
 export const data = [
-    {
-      date: 'May 2022',
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
-    },
-    {
-      date: 'Dec 2021',
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
-    },
-    {
-      date: 'April 2023',
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
-    },
-    {
-      date: 'Jun 2023',
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
-    },
-    {
-      date: 'Jan 2024',
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
-    },
-   
-    {
-      date: 'Feb 2023',
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
-    },
-   
-    // 2021
+ 
     { date: 'Jan 2021', uv: 4000, pv: 1500, amt: 2200 },
     { date: 'Feb 2021', uv: 3000, pv: 2500, amt: 2300 },
     { date: 'Mar 2021', uv: 1000, pv: 3500, amt: 2400 },
@@ -60,21 +22,20 @@ export const data = [
     { date: 'Jul 2022', uv: 20000, pv: 19500, amt: 4000 },
     { date: 'Aug 2022', uv: 21000, pv: 30500, amt: 4100 },
     { date: 'Sep 2022', uv: 19000, pv: 27500, amt: 4200 },
-    // { date: 'Oct 2022', uv: 23000, pv: 22500, amt: 4300 },
+    { date: 'Oct 2022', uv: 23000, pv: 22500, amt: 4300 },
     { date: 'Nov 2022', uv: 24000, pv: 23500, amt: 4400 },
     { date: 'Dec 2022', uv: 25000, pv: 24500, amt: 4500 },
     // 2023
     { date: 'Jan 2023', uv: 26000, pv: 25500, amt: 4600 },
     { date: 'Feb 2023', uv: 21450, pv: 29500, amt: 4700 },
-    // { date: 'Mar 2023', uv: 28000, pv: 27500, amt: 4800 },
-    { date: 'Apr 2023', uv: 29000, pv: 28500, amt: 4900 },
+    { date: 'Mar 2023', uv: 28000, pv: 27500, amt: 4800 },
     { date: 'May 2023', uv: 30000, pv: 36500, amt: 5000 },
     { date: 'Jun 2023', uv: 29000, pv: 35500, amt: 5100 },
     { date: 'Jul 2023', uv: 32000, pv: 31500, amt: 5200 },
     { date: 'Aug 2023', uv: 23000, pv: 42500, amt: 5300 },
-    // { date: 'Sep 2023', uv: 34000, pv: 33500, amt: 5400 },
+    { date: 'Sep 2023', uv: 34000, pv: 33500, amt: 5400 },
     { date: 'Oct 2023', uv: 25000, pv: 34500, amt: 5500 },
-    // { date: 'Nov 2023', uv: 36000, pv: 35500, amt: 5600 },
+    { date: 'Nov 2023', uv: 36000, pv: 35500, amt: 5600 },
     { date: 'Dec 2023', uv: 37000, pv: 10500, amt: 5700 },
   ];
   

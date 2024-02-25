@@ -7,6 +7,7 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
+  Brush,
 } from "recharts";
 import { data } from "../../context/index";
 import { ChartTooltip } from "../Dashboard/ChartTooltip";
@@ -42,6 +43,7 @@ const StoreChart: React.FC = () => {
           bottom: 5,
         }}
       >
+         <Brush/>
         <CartesianGrid strokeDasharray="1 1" />
         <XAxis
           dataKey="date"
@@ -82,7 +84,9 @@ const StoreChart: React.FC = () => {
           stroke="#82ca9d"
           strokeDasharray="3 4 5 2"
         />
+        {/* <Brush/> */}
       </LineChart>
+     
     </ResponsiveContainer>
   );
 };
