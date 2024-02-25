@@ -6,71 +6,71 @@ const Head = () => {
 
 
   return (
-    <div className=" w-[90%] m-auto px-4 py-6 flex flex-col  sm:flex-row gap-5 border-red-700">
+    <div className="m-auto px-8 py-6 flex flex-col  sm:flex-row gap-1 border-red-700">
      
-      <div className="rounded-lg px-2 py-2 bg-[#F1F1F1] sm:w-1/5 m-auto flex flex-col items-center justify-center">
-        <div className="flex flex-row  gap-5">
-          <p className="flex justify-start">Online store sessions</p>
-          <p className="m-auto items-center">
-            <FaPencilAlt />
-          </p>
+      <div className="rounded-lg  px-8 py-2 bg-[#F1F1F1]  m-auto ">
+        <div className="py-1 px-1 flex justify-between gap-10">
+          <p className="font-semibold text-[#303030]"> Online store sessions </p>
+          <p className="m-auto text-[#70707A]"> <FaPencilAlt  /> </p>
         </div>
+        <div className="py-1 px-1 flex flex-row gap-2">
+          <p className="font-bold text-[#303030] text-lg"> 255,581 </p>
+          <p className="m-auto flex flex-row gap-2 ml-2"> 
+           <p className="m-auto">
+           <BiSolidUpArrow className="text-sm text-[#70707A]"/>
+           </p>
+            <p className="m-auto text-[#70707A]">9% </p> 
+           </p>
+        </div>
+     </div>
 
-        <div className="flex flex-row gap-5 justify-start">
-          <p className="stat-title text-left">255,581</p>
-          <p className="m-auto">
-            <BiSolidUpArrow />
-          </p>
+     <div className="rounded-lg  px-8 py-2 bg-[#F1F1F1]  m-auto ">
+        <div className="py-1 px-1 flex justify-between gap-10">
+          <p className="font-semibold text-[#303030]"> Online store sessions </p>
+          <p className="m-auto text-[#70707A]"> <FaPencilAlt  /> </p>
         </div>
-      </div>
+        <div className="py-1 px-1 flex flex-row gap-2">
+          <p className="font-bold text-[#303030] text-lg"> 255,581 </p>
+          <p className="m-auto flex flex-row gap-2 ml-2"> 
+           <p className="m-auto">
+           <BiSolidUpArrow className="text-sm text-[#70707A]"/>
+           </p>
+            <p className="m-auto text-[#70707A]">9% </p> 
+           </p>
+        </div>
+     </div>
 
-      <div className="rounded-lg px-2 py-2 bg-[#F1F1F1] sm:w-1/5 m-auto  flex flex-col items-center justify-center">
-        <div className="flex flex-row  gap-5">
-          <p className="flex justify-start">Online store sessions</p>
-          <p className="m-auto items-center">
-            <FaPencilAlt />
-          </p>
+     <div className="rounded-lg  px-8 py-2 bg-[#F1F1F1]  m-auto ">
+        <div className="py-1 px-1 flex justify-between gap-10">
+          <p className="font-semibold text-[#303030]"> Online store sessions </p>
+          <p className="m-auto text-[#70707A]"> <FaPencilAlt  /> </p>
         </div>
+        <div className="py-1 px-1 flex flex-row gap-2">
+          <p className="font-bold text-[#303030] text-lg"> 255,581 </p>
+          <p className="m-auto flex flex-row gap-2 ml-2"> 
+           <p className="m-auto">
+           <BiSolidUpArrow className="text-sm text-[#70707A]"/>
+           </p>
+            <p className="m-auto text-[#70707A]">9% </p> 
+           </p>
+        </div>
+     </div>
 
-        <div className="flex flex-row gap-5 justify-start">
-          <p className="stat-title text-left">255,581</p>
-          <p className="m-auto">
-            <BiSolidUpArrow />
-          </p>
+     <div className="rounded-lg  px-8 py-2 bg-[#F1F1F1]  m-auto ">
+        <div className="py-1 px-1 flex justify-between gap-10">
+          <p className="font-semibold text-[#303030]"> Online store sessions </p>
+          <p className="m-auto text-[#70707A]"> <FaPencilAlt  /> </p>
         </div>
-      </div>
-
-      <div className="rounded-lg px-2 py-2 bg-[#F1F1F1] sm:w-1/5 m-auto  flex flex-col items-center justify-center">
-        <div className="flex flex-row  gap-5">
-          <p className="flex justify-start">Online store sessions</p>
-          <p className="m-auto items-center">
-            <FaPencilAlt />
-          </p>
+        <div className="py-1 px-1 flex flex-row gap-2">
+          <p className="font-bold text-[#303030] text-lg"> 255,581 </p>
+          <p className="m-auto flex flex-row gap-2 ml-2"> 
+           <p className="m-auto">
+           <BiSolidUpArrow className="text-sm text-[#70707A]"/>
+           </p>
+            <p className="m-auto text-[#70707A]">9% </p> 
+           </p>
         </div>
-
-        <div className="flex flex-row gap-5 justify-start">
-          <p className="stat-title text-left">255,581</p>
-          <p className="m-auto">
-            <BiSolidUpArrow />
-          </p>
-        </div>
-      </div>
-
-      <div className="rounded-lg px-2 py-2 bg-[#F1F1F1] sm:w-1/5 m-auto  flex flex-col items-center justify-center">
-        <div className="flex flex-row  gap-5">
-          <p className="flex justify-start">Online store sessions</p>
-          <p className="m-auto items-center">
-            <FaPencilAlt />
-          </p>
-        </div>
-
-        <div className="flex flex-row gap-5 justify-start">
-          <p className="stat-title text-left">255,581</p>
-          <p className="m-auto">
-            <BiSolidUpArrow />
-          </p>
-        </div>
-      </div>
+     </div>
 
     </div>
   );

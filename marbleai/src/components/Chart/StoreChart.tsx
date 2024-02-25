@@ -31,11 +31,11 @@ const [selectedData, setSelectedData] = useState<DataItem[]>(initialData);
 
   return (
     <div>
-     <CustomDatePicker
+     {/* <CustomDatePicker
         onDateRangeChange={handleDateRangeChange}
         defaultStartDate={defaultStartDate}
         defaultEndDate={defaultEndDate}
-      />
+      /> */}
 
       <ResponsiveContainer height={400}>
         <LineChart

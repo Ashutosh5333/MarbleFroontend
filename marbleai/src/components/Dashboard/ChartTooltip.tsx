@@ -1,7 +1,6 @@
-// import { HiMiniArrowTrendingDown } from "react-icons/hi2";
+
 import LineImage from "../../assets/Line 3.png";
-import trend from "../../assets/Trend.svg";
-import { FaArrowTrendDown } from "react-icons/fa6";
+import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6";
 
 export const ChartTooltip = ({ active, payload, coordinate, data }: any) => {
   if (active && payload && payload.length && data && data.length >= 2) {
@@ -37,8 +36,8 @@ export const ChartTooltip = ({ active, payload, coordinate, data }: any) => {
                 {previousMonthData.pv > currentMonthData.pv ? (
                   <FaArrowTrendDown  className="text-lg font-bold text-[#676767]" />
                 ) : (
-                  <img src={trend} alt="+" className="w-5" />
-                )}
+                    <FaArrowTrendUp className="text-lg font-bold text-[#676767]"/>
+                )} 
                 {absPercentageChange}
               </span>
             </span>
