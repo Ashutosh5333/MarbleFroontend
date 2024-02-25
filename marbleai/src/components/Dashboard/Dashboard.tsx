@@ -8,7 +8,8 @@ import Head from "./Head"
    return (
      <div className="border-2 border-red-700">
       <Head/>
-      <StoreChart/>
+
+      <StoreChart  />
 
      </div>
    )
