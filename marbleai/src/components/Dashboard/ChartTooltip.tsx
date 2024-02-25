@@ -1,3 +1,4 @@
+import Line from "../../assets/Line 3.png"
 export const ChartTooltip = ({
     active,
     payload,
@@ -22,16 +23,17 @@ export const ChartTooltip = ({
                 className="p-1 py-2 px-4 flex flex-col shadow-lg bg-white justify-center items-start border rounded-lg"
                 style={tooltipStyle}
             >
-                <p className="text-xs py-2 ">
-                     <span className="border-2  border-red-700"> </span>
+                <p className="text-xs py-1 flex items-center gap-2">
+                     <img className="m-1 p-1" src={Line}/>
                     {`${previousMonthData.date} `}
-                    <span className=" p-2 font-semibold">{previousMonthData.pv} 
-                    <span className="p-2"> {previousMonthData.pv > currentMonthData.pv ?  +absPercentageChange  : -absPercentageChange } </span>
+                    <span className="p-1 font-semibold">{previousMonthData.pv} 
+                    <span className="p-1"> {previousMonthData.pv > currentMonthData.pv ?  +absPercentageChange  : -absPercentageChange } </span>
                     </span>
                 </p>
-                <p className="text-xs py-2">
+                <p className="text-xs py-1 flex items-center gap-2">
+                <img className="m-1 p-1" src={Line}/>
                     {`${currentMonthData.date} `}
-                    <span className="p-2 font-semibold">{currentMonthData.pv}</span>
+                    <span className="p-1 font-semibold">{currentMonthData.pv}</span>
                 </p>
             
 

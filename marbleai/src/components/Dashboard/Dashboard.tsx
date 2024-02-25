@@ -6,7 +6,7 @@ import Head from "./Head"
 
 
    return (
-     <div className="border-2 border-red-700">
+     <div className=" border-red-700">
       <Head/>
 
       <StoreChart  />

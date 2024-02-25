@@ -11,6 +11,7 @@ import {
 import { data } from "../../context/index";
 import { ChartTooltip } from "../Dashboard/ChartTooltip";
 import { CustomYAxisTick } from "../Dashboard/CustomYAxisTick";
+import { CustomLegend } from "../Dashboard/CutstomLegend";
 
 const StoreChart: React.FC = () => {
   type DataItem = {
@@ -27,13 +28,6 @@ const StoreChart: React.FC = () => {
     const bDate = new Date(`${bYear} ${bMonth}`);
     return aDate.getTime() - bDate.getTime();
   });
-
-//   const formatYAxisTick = (tick: number) => {
-//     if (tick >= 1000) {
-//         return `${Math.round(tick / 1000)}k`;
-//     }
-//     return tick;
-// };
 
 
   return (
@@ -60,7 +54,6 @@ const StoreChart: React.FC = () => {
         />
         <YAxis
          tick={<CustomYAxisTick />}
-    
           interval="preserveStartEnd"
         />
         <Tooltip
@@ -74,7 +67,9 @@ const StoreChart: React.FC = () => {
             borderRadius: "10px",
           }}
         />
-        <Legend />
+
+          <Legend content={<CustomLegend data={Data} />} />
+
         <Line
           type="monotone"
           dataKey="pv"
