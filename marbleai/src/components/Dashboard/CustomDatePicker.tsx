@@ -4,9 +4,6 @@ const CustomDatePicker = ({ onDateRangeChange, defaultStartDate, defaultEndDate 
   const [startDate, setStartDate] = useState(defaultStartDate);
   const [endDate, setEndDate] = useState(defaultEndDate);
 
-    // console.log("start",startDate)
-    // console.log("enddate",endDate)
-
   useEffect(() => {
      onDateRangeChange(startDate, endDate);
   }, [startDate, endDate]);

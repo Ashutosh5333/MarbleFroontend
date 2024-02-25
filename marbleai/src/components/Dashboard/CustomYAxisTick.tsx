@@ -5,7 +5,7 @@ export const CustomYAxisTick = (props: any) => {
     const formattedTick = payload.value >= 1000 ? `${Math.round(payload.value / 1000)}k` : payload.value;
     
     return (
-        <Text x={x} y={y} fontSize={12} textAnchor="end" fill="#666">
+        <Text x={x} y={y} fontSize={14} textAnchor="end" strokeWidth={2} fill="#676767">
             {formattedTick}
         </Text>
     );

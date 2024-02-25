@@ -48,19 +48,24 @@ const [selectedData, setSelectedData] = useState<DataItem[]>(initialData);
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="1 1" />
+          <CartesianGrid strokeDasharray="1 0" vertical={false} />
           <XAxis
             dataKey="date"
             tickCount={selectedData?.length ?? 0}
             tick={{
-              stroke: "light-grey",
-              strokeWidth: 0.5,
-              fontSize: "12px",
+              stroke: "#676767",
+              strokeWidth: 0.4,
+              fontSize: ".9rem",
             }}
+            tickLine={false}
+            axisLine={false} 
           />
           <YAxis
             tick={<CustomYAxisTick />}
             interval="preserveStartEnd"
+            tickLine={false}
+            axisLine={false} 
+            
           />
           <Tooltip
             content={<ChartTooltip data={selectedData} colors={{
@@ -77,14 +82,17 @@ const [selectedData, setSelectedData] = useState<DataItem[]>(initialData);
           <Line
             type="monotone"
             dataKey="pv"
-            stroke="#8884d8"
-            activeDot={{ r: 2 }}
+            stroke="#489AD2"
+            strokeWidth={2} 
+            dot={false}
           />
-          <Line
+          
+            <Line
             type="monotone"
             dataKey="uv"
-            stroke="#82ca9d"
+            stroke="#6FC2F3"
             strokeDasharray="3 4 5 2"
+            dot={false}
           />
         </LineChart>
       </ResponsiveContainer>
