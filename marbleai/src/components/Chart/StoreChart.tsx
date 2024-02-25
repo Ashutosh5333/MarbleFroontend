@@ -10,6 +10,7 @@ import {
 } from "recharts";
 import { data } from "../../context/index";
 import { ChartTooltip } from "../Dashboard/ChartTooltip";
+import { CustomYAxisTick } from "../Dashboard/CustomYAxisTick";
 
 const StoreChart: React.FC = () => {
   type DataItem = {
@@ -27,6 +28,14 @@ const StoreChart: React.FC = () => {
     return aDate.getTime() - bDate.getTime();
   });
 
+//   const formatYAxisTick = (tick: number) => {
+//     if (tick >= 1000) {
+//         return `${Math.round(tick / 1000)}k`;
+//     }
+//     return tick;
+// };
+
+
   return (
     <ResponsiveContainer height={400}>
       <LineChart
@@ -39,7 +48,7 @@ const StoreChart: React.FC = () => {
           bottom: 5,
         }}
       >
-        <CartesianGrid strokeDasharray="3 3" />
+        <CartesianGrid strokeDasharray="1 1" />
         <XAxis
           dataKey="date"
           tickCount={Data?.length ?? 0}
@@ -50,11 +59,8 @@ const StoreChart: React.FC = () => {
           }}
         />
         <YAxis
-          tick={{
-            stroke: "light-grey",
-            strokeWidth: 0.5,
-            fontSize: "12px",
-          }}
+         tick={<CustomYAxisTick />}
+    
           interval="preserveStartEnd"
         />
         <Tooltip

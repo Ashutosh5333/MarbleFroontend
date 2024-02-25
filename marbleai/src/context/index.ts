@@ -29,12 +29,7 @@ export const data = [
       pv: 4800,
       amt: 2181,
     },
-    {
-      date: 'Jun 2023',
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
-    },
+   
     {
       date: 'Feb 2023',
       uv: 3490,
