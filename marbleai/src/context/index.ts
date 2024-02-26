@@ -39,3 +39,25 @@ export const data = [
     { date: 'Dec 2023', uv: 37000, pv: 10500, amt: 5700 },
   ];
   
+export const  Headingdata =[
+       {
+        Title:"Online store sessions",
+         total:"255,581",
+          per:"9%"
+       },
+       {
+        Title:"Net return value",
+         total:"-$15,07.44",
+          per:"14%"
+       },
+       {
+        Title:"Total orders",
+         total:"10,511",
+          per:"2%"
+       },
+       {
+        Title:"Conversion rate",
+         total:"3.18%",
+          per:"7%"
+       }
+]
