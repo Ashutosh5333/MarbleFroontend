@@ -1,7 +1,10 @@
 import { FaPencilAlt } from "react-icons/fa";
 import { BiSolidUpArrow } from "react-icons/bi";
 import { useState } from "react";
-import { Tooltip, Typography } from "@material-tailwind/react";
+import {
+  Tooltip,
+  Typography,
+} from "@material-tailwind/react";
 
 export const HeadItem = ({ title, total, per }: any) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -21,16 +24,15 @@ export const HeadItem = ({ title, total, per }: any) => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="py-1 px-1  border-b-2 border-dashed flex justify-between items-center">
-        
         <Tooltip
           placement="bottom-start"
-          className="border border-blue-gray-50 bg-white px-4 py-3 shadow-xl shadow-black/10"
+          className="border border-blue-gray-50 text-black bg-white px-4 py-3 shadow-xl shadow-black/10"
           content={
             <div className="w-100">
               <Typography
                 placeholder="Your placeholder text"
                 color="blue-gray"
-                className='font-semibold py-1 text-lg'
+                className="font-semibold py-1 text-lg"
               >
                 Online Store sessions
               </Typography>
@@ -41,12 +43,12 @@ export const HeadItem = ({ title, total, per }: any) => {
                 color="blue-gray"
                 className="font-normal py-1 opacity-80"
               >
-               Your online store's traffic volume, shown in sessions.
+                Your online store's traffic volume, shown in sessions.
               </Typography>
             </div>
           }
         >
-         <p className="font-semibold text-[#303030]">{title}</p>
+          <p className="font-semibold text-[#303030]">{title}</p>
         </Tooltip>
 
         <p
@@ -55,6 +57,7 @@ export const HeadItem = ({ title, total, per }: any) => {
         `}
         >
           <FaPencilAlt />
+          
         </p>
       </div>
 
