@@ -7,6 +7,7 @@ import { CustomLegend } from "../Dashboard/CutstomLegend";
 import CustomDatePicker from '../Dashboard/CustomDatePicker';
 import { DataItem } from '../../interface';
 
+
 const StoreChart: React.FC = () => {
   const initialData: DataItem[] = [...data].sort((a: DataItem, b: DataItem) => {
     const [aMonth, aYear] = a.date.split(" ");
@@ -45,8 +46,8 @@ const [selectedData, setSelectedData] = useState<DataItem[]>(initialData);
           data={selectedData}
           margin={{
             top: 20,
-            right: 30,
-            left: 10,
+            right:40,
+            left: 0,
             bottom: 5,
           }}
         >
@@ -100,5 +101,6 @@ const [selectedData, setSelectedData] = useState<DataItem[]>(initialData);
     </div>
   );
 };
+
 
 export default StoreChart;

@@ -17,13 +17,13 @@ const CustomDatePicker = ({ onDateRangeChange, defaultStartDate, defaultEndDate 
   };
 
   return (
-    <div className="flex px-4 items-center justify-center mt-6 space-x-6 sm:space-x-4">
-      <div className="flex items-center sm:space-x-2">
-        <label htmlFor="startDate" className="text-sm sm:text-md text-gray-600">Start Date:</label>
+    <div className="w-[100%] py-4 sm:w-[80%] lg:w-[50%] m-auto flex sm:px-4 flex-col sm:flex-row mt-6 items-center gap-2 space-x-2 sm:space-x-4">
+      <div className="flex items-center space-x-2">
+        <label htmlFor="startDate" className="text-sm sm:text-md text-gray-600">Start Date :</label>
         <input type="date" id="startDate" value={startDate} onChange={handleStartDateChange} className="border text-gray-600 border-gray-300 rounded-md px-2 py-1" />
       </div>
-      <div className="flex items-center sm:space-x-2">
-        <label htmlFor="endDate" className="text-sm sm:text-md text-gray-600">End Date:</label>
+      <div className="flex items-center space-x-2">
+        <label htmlFor="endDate" className="text-sm  sm:text-md text-gray-600">End Date :</label>
         <input type="date" id="endDate" value={endDate} onChange={handleEndDateChange} className="border text-gray-600  border-gray-300 rounded-md px-2 py-1" />
       </div>
     </div>

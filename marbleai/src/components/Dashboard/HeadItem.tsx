@@ -6,7 +6,7 @@ import TrendMenu from "../../assets/TrendMenu.svg";
 import TrendQuestion from "../../assets/TrendQuestion.svg";
 import { Menulist } from "../../context/index";
 
-export const HeadItem = ({ title, total, per }: any) => {
+export const HeadItem = ({ title, total, per, index }: any) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [menuHoveredIndex, setMenuHoveredIndex] = useState(-1);
@@ -14,6 +14,7 @@ export const HeadItem = ({ title, total, per }: any) => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -29,10 +30,15 @@ export const HeadItem = ({ title, total, per }: any) => {
   const handleMenuMouseLeave = () => {
     setMenuHoveredIndex(-1);
   };
+  //  left-20 top-40
+  //      sm:top-30 sm:right-0 sm:left-40
+  //      lg:top-none lg:bottom-none lg:left-40 right-none
 
   return (
     <div
-      className="rounded-lg cursor-pointer sm:w-1/4 px-4 md:px-6 py-4 hover:bg-[#F1F1F1] mb-4 sm:mb-0"
+      className={`rounded-lg cursor-pointer  px-4 md:px-6 py-4
+        ${index === 0 ? "bg-[#F1F1F1]" : ""}
+        hover:bg-[#F1F1F1] mb-4 sm:mb-0`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -41,11 +47,11 @@ export const HeadItem = ({ title, total, per }: any) => {
           placement="bottom-start"
           className="border border-blue-gray-50 text-black bg-white px-4 py-3 shadow-xl shadow-black/10"
           content={
-            <div className="w-100">
+            <div className="w-50 px-2 sm:w-100">
               <Typography
                 placeholder="Your placeholder text"
                 color="blue-gray"
-                className="font-semibold py-1 text-lg"
+                className="font-semibold py-1 text-sm sm:text-lg"
               >
                 Online Store sessions
               </Typography>
@@ -54,7 +60,7 @@ export const HeadItem = ({ title, total, per }: any) => {
                 placeholder="Your placeholder text"
                 variant="small"
                 color="blue-gray"
-                className="font-normal py-1 opacity-80"
+                className="font-normal py-1 text-[.7rem] sm:text-md opacity-80"
               >
                 Your online store's traffic volume, shown in sessions.
               </Typography>
@@ -74,11 +80,12 @@ export const HeadItem = ({ title, total, per }: any) => {
 
           {isOpen && (
             <div
-              className="fixed z-50  border-red-800 flex items-center
-               justify-center bg-opacity-50"
+              className="fixed inset-0 sm:inset-auto lg:inset-auto z-50 flex items-center justify-center bg-opacity-50
+              sm:top-40 sm:right-0 sm:left-20
+              "
               onClick={toggleMenu}
             >
-              <div className="bg-white mr-2 p-4 rounded shadow-lg">
+              <div className="bg-white p-4 rounded shadow-lg">
                 <ul className="list-none p-0">
                   {Menulist.map((item: any, index: any) => (
                     <li
