@@ -61,3 +61,22 @@ export const  Headingdata =[
           per:"7%"
        }
 ]
+
+export const Menulist =[
+   {
+      title:"Average Order Value"
+   },
+   {
+      title:"Conversion rate"
+   },{
+      title:"Gross Sales"
+   },
+   {
+      title:"Net return value"
+   },
+   {
+      title:"Store search conversion"
+   },{
+      title:"Return rate"
+   }
+]
