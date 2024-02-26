@@ -22,7 +22,6 @@ export const HeadItem = ({ title, total, per }: any) => {
     setIsHovered(false);
   };
 
-
   const handleMenuMouseEnter = (index: SetStateAction<number>) => {
     setMenuHoveredIndex(index);
   };
@@ -65,12 +64,13 @@ export const HeadItem = ({ title, total, per }: any) => {
           <p className="font-semibold text-[#303030]">{title}</p>
         </Tooltip>
 
-        <p    className={`text-[#70707A] ${isHovered ? "block" : "hidden"}
+        <p
+          className={`text-[#70707A] ${isHovered ? "block" : "hidden"}
         hover:p-1 hover:bg-[#aeabab] rounded  p-1 relative`}
         >
-          <p className="  rounded focus:outline-none" onClick={toggleMenu}>
+          <span className="  rounded focus:outline-none" onClick={toggleMenu}>
             <FaPencilAlt />
-          </p>
+          </span>
 
           {isOpen && (
             <div
@@ -78,14 +78,14 @@ export const HeadItem = ({ title, total, per }: any) => {
                justify-center bg-opacity-50"
               onClick={toggleMenu}
             >
-              <div className="bg-white p-4 rounded shadow-lg">
+              <div className="bg-white mr-2 p-4 rounded shadow-lg">
                 <ul className="list-none p-0">
                   {Menulist.map((item: any, index: any) => (
                     <li
                       key={index}
                       onMouseEnter={() => handleMenuMouseEnter(index)}
                       onMouseLeave={handleMenuMouseLeave}
-                      className={`py-2 cursor-pointer px-2 rounded-lg hover:bg-[#F1F1F1] flex justify-between items-center ${
+                      className={`py-2 w-56 cursor-pointer px-2 rounded-lg hover:bg-[#F1F1F1] flex justify-between items-center ${
                         menuHoveredIndex === index ? "bg-[#F1F1F1]" : ""
                       }`}
                     >

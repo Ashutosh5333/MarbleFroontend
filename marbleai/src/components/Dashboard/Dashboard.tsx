@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import StoreChart from "../Chart/StoreChart"
 import Head from "./Head"
-import {data} from "../../context/index"
 import Skeleton from "../Skelton/Skeleton"
 
   

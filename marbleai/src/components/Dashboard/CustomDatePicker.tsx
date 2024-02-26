@@ -1,11 +1,11 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const CustomDatePicker = ({ onDateRangeChange, defaultStartDate, defaultEndDate }:any) => {
   const [startDate, setStartDate] = useState(defaultStartDate);
   const [endDate, setEndDate] = useState(defaultEndDate);
 
   useEffect(() => {
-     onDateRangeChange(startDate, endDate);
+    onDateRangeChange(startDate, endDate);
   }, [startDate, endDate]);
 
   const handleStartDateChange = (event: { target: { value: any; }; }) => {
@@ -17,11 +17,15 @@ const CustomDatePicker = ({ onDateRangeChange, defaultStartDate, defaultEndDate 
   };
 
   return (
-    <div>
-      <label htmlFor="startDate">Start Date:</label>
-      <input type="month" id="startDate" value={startDate} onChange={handleStartDateChange} />
-      <label htmlFor="endDate">End Date:</label>
-      <input type="month" id="endDate" value={endDate} onChange={handleEndDateChange} />
+    <div className="flex px-4 items-center justify-center mt-6 space-x-6 sm:space-x-4">
+      <div className="flex items-center sm:space-x-2">
+        <label htmlFor="startDate" className="text-sm sm:text-md text-gray-600">Start Date:</label>
+        <input type="date" id="startDate" value={startDate} onChange={handleStartDateChange} className="border text-gray-600 border-gray-300 rounded-md px-2 py-1" />
+      </div>
+      <div className="flex items-center sm:space-x-2">
+        <label htmlFor="endDate" className="text-sm sm:text-md text-gray-600">End Date:</label>
+        <input type="date" id="endDate" value={endDate} onChange={handleEndDateChange} className="border text-gray-600  border-gray-300 rounded-md px-2 py-1" />
+      </div>
     </div>
   );
 };

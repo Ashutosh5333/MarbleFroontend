@@ -28,14 +28,16 @@ const [selectedData, setSelectedData] = useState<DataItem[]>(initialData);
   };
   const defaultStartDate = initialData[0]?.date;
   const defaultEndDate = initialData[initialData.length - 1]?.date;
+  
+  // console.log("filterdata",selectedData)
 
   return (
     <div>
-     {/* <CustomDatePicker
+     <CustomDatePicker
         onDateRangeChange={handleDateRangeChange}
         defaultStartDate={defaultStartDate}
         defaultEndDate={defaultEndDate}
-      /> */}
+      />
 
       <ResponsiveContainer height={400}>
         <LineChart
@@ -43,8 +45,8 @@ const [selectedData, setSelectedData] = useState<DataItem[]>(initialData);
           data={selectedData}
           margin={{
             top: 20,
-            right: 50,
-            left: 20,
+            right: 30,
+            left: 10,
             bottom: 5,
           }}
         >

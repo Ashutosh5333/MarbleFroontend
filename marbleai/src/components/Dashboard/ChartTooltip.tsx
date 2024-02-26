@@ -1,6 +1,6 @@
-
 import LineImage from "../../assets/Line 3.png";
 import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6";
+import lightline from "../../assets/lightline.svg";
 
 export const ChartTooltip = ({ active, payload, coordinate, data }: any) => {
   if (active && payload && payload.length && data && data.length >= 2) {
@@ -34,17 +34,17 @@ export const ChartTooltip = ({ active, payload, coordinate, data }: any) => {
               {currentMonthData.pv}
               <span className="flex flex-row gap-2">
                 {previousMonthData.pv > currentMonthData.pv ? (
-                  <FaArrowTrendDown  className="text-lg font-bold text-[#676767]" />
+                  <FaArrowTrendDown className="text-lg font-bold text-[#676767]" />
                 ) : (
-                    <FaArrowTrendUp className="text-lg font-bold text-[#676767]"/>
-                )} 
+                  <FaArrowTrendUp className="text-lg font-bold text-[#676767]" />
+                )}
                 {absPercentageChange}%
               </span>
             </span>
           </p>
 
           <p className="text-xs py-1 flex items-center gap-2">
-            <img className="m-1 p-1" src={LineImage} alt="Line" />
+            <img className="m-1 p-1" src={lightline} alt="Line" />
             {`${previousMonthData.date} `}
             <span className="p-1 font-semibold">{previousMonthData.pv}</span>
           </p>
