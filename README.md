@@ -103,6 +103,15 @@ Comparison ![chart](https://github.com/Ashutosh5333/MarbleFroontend/assets/10139
 
 <br />
 
+# Loading Skelton
+
+<br />
+
+![ChartClosed](https://github.com/Ashutosh5333/MarbleFroontend/assets/101393850/df332cc6-e014-40d4-8775-846efff6133d)
+
+
+<br />
+
 
 
 
