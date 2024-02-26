@@ -8,7 +8,7 @@ const Head = ({ SetActive, ActiveStore }: any) => {
   };
 
   return (
-    <div className="m-auto sm:px-8 py-6 flex flex-col sm:flex-row gap-4 lg:gap-8">
+    <div className="w-[90%] m-auto   sm:px-8 py-6 flex flex-col sm:flex-row gap-4 lg:gap-8">
       {Headingdata.map((heading, index) => (
         <HeadItem
           key={index}

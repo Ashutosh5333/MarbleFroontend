@@ -2,7 +2,7 @@ import React from "react";
 
 const Skeleton: React.FC = () => {
   return (
-    <div className="px-4 py-4 shadow-xl bg-[#FFFFFF] rounded-lg ed-700 animate-pulse">
+    <div className=" px-8 py-4 shadow-xl bg-[#FFFFFF] rounded-lg ed-700 animate-pulse">
       <div className="w-full py-4 flex gap-2 flex-col sm:flex-row reen-500">
         <div className="rounded-lg px-2 py-4 bg-[#F1F1F1] sm:w-1/4 lack flex flex-col">
           <div className="rounded-lg bg-gray-300 h-10 w-3/5 mb-4"></div>

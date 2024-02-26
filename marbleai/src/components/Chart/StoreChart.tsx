@@ -86,7 +86,6 @@ const [selectedData, setSelectedData] = useState<DataItem[]>(initialData);
             strokeWidth={2} 
             dot={false}
           />
-          
             <Line
             type="monotone"
             dataKey="uv"

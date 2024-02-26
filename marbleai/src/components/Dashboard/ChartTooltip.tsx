@@ -38,7 +38,7 @@ export const ChartTooltip = ({ active, payload, coordinate, data }: any) => {
                 ) : (
                     <FaArrowTrendUp className="text-lg font-bold text-[#676767]"/>
                 )} 
-                {absPercentageChange}
+                {absPercentageChange}%
               </span>
             </span>
           </p>
