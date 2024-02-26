@@ -16,6 +16,7 @@ Welcome to the Online Store Session project! This project provides tools for man
   - [Usage](#usage)
 - [Features](#features)
 - [Documentation](#documentation)
+- [Example](#Screenshots)
 
 
 ## About
@@ -53,7 +54,9 @@ npm run build
    6. Date Picker Range By Available Given Date
 
 
+### ScreenShots
 
+  # Main Screen  
 
 ![chart2](https://github.com/Ashutosh5333/MarbleFroontend/assets/101393850/3f0e8021-6998-485f-a4a6-6750dc083c17)
 
@@ -61,22 +64,40 @@ npm run build
 <br />
 <br />
 
+  # Overlay Comparsion 
+
 Comparison ![chart](https://github.com/Ashutosh5333/MarbleFroontend/assets/101393850/8723d3c2-fec4-4bd1-a471-8344ae723ac5)
 
 </div>
+<br />
+  
+  # Hover Screen
+  
+<br />
+
+![Charthoverpop](https://github.com/Ashutosh5333/MarbleFroontend/assets/101393850/44f679a8-cfd3-4d6e-95fb-b8960b623baa)
 
 <br />
-![Charthoverpop](https://github.com/Ashutosh5333/MarbleFroontend/assets/101393850/44f679a8-cfd3-4d6e-95fb-b8960b623baa)
+
+# MenuList Screen
+
+
 <br />
 
 ![ChartMenulist](https://github.com/Ashutosh5333/MarbleFroontend/assets/101393850/1b808035-3f3b-4e4b-9638-4f000c6155a6)
+<br />
+
+# Date Picker
 
 <br />
 
 ![Datepicker](https://github.com/Ashutosh5333/MarbleFroontend/assets/101393850/3d41f5a1-ece8-4be1-8ef0-7de3de9d238e)
+<br />
 
+# Chart Closed
 
 <br />
+
 ![ChartClosed](https://github.com/Ashutosh5333/MarbleFroontend/assets/101393850/df332cc6-e014-40d4-8775-846efff6133d)
 
 
