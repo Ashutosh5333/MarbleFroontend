@@ -1,57 +1,55 @@
-import LineImage from "../../assets/Line 3.png";
-import { FaArrowTrendDown, FaArrowTrendUp } from "react-icons/fa6";
-import lightline from "../../assets/lightline.svg";
+import React from "react";
+export const ChartTooltip = ({
+    active,
+    payload,
+    label,
+    coordinate,
+    colors,
+    kpi,
+}: any) => {
+    if (active && payload && payload.length) {
+        const dataPoint = payload[0].payload;
+//    console.log(active,"active")
+    //   console.log("payload",payload)
+        const tooltipStyle = {
+            left: coordinate.x, // Adjust positioning
+            top: coordinate.y, // Adjust positioning
+        };
 
-export const ChartTooltip = ({ active, payload, coordinate, data }: any) => {
-  if (active && payload && payload.length && data && data.length >= 2) {
-    const tooltipStyle = {
-      left: coordinate.x,
-      top: coordinate.y,
-    };
-
-    const currentMonthData = payload[0].payload;
-    const currentIndex = data.findIndex(
-      (item: any) => item.date === currentMonthData.date
-    );
-
-    if (currentIndex > 0) {
-      const previousMonthData = data[currentIndex - 1];
-
-      const percentageChange: number =
-        ((currentMonthData.pv - previousMonthData.pv) / previousMonthData.pv) *
-        100;
-      const absPercentageChange = Math.abs(Math.round(percentageChange));
-
-      return (
-        <div
-          className="p-1 py-2 px-4 flex flex-col shadow-lg bg-white justify-center items-start  rounded-lg"
-          style={tooltipStyle}
-        >
-          <p className="Previous text-xs py-1 flex items-center gap-2">
-            <img className="m-1 p-1" src={LineImage} alt="Line" />
-            {`${currentMonthData.date} `}
-            <span className="p-1  flex flex-row gap-3 font-semibold">
-              {currentMonthData.pv}
-              <span className="flex flex-row gap-2">
-                {previousMonthData.pv > currentMonthData.pv ? (
-                  <FaArrowTrendDown className="text-lg font-bold text-[#676767]" />
-                ) : (
-                  <FaArrowTrendUp className="text-lg font-bold text-[#676767]" />
-                )}
-                {absPercentageChange}%
-              </span>
-            </span>
-          </p>
-
-          <p className="text-xs py-1 flex items-center gap-2">
-            <img className="m-1 p-1" src={lightline} alt="Line" />
-            {`${previousMonthData.date} `}
-            <span className="p-1 font-semibold">{previousMonthData.pv}</span>
-          </p>
-        </div>
-      );
+        return (
+            <div
+                className="p-1 flex flex-col justify-center items-start border border-black rounded-lg text-zinc-50"
+                style={tooltipStyle}
+            >
+                <div
+                    style={{
+                        position: "absolute",
+                        width: "0",
+                        height: "0",
+                        borderTop: "10px solid transparent",
+                        borderBottom: "10px solid transparent",
+                        borderRight: "10px solid rgba(0, 0, 0, 0.7)",
+                        left: "-10px",
+                    }}
+                />
+                <p className="flex text-xs font-semibold">{label}</p>
+                <p className="text-xs">
+                    <span
+                        className="mr-1"
+                        style={{
+                            width: "0.5px",
+                            height: "0.5px",
+                            border: `1px solid ${colors?.stroke}`,
+                            backgroundColor: colors?.fill,
+                        }}
+                    >
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    {`${kpi}: ${dataPoint.value}`}
+                </p>
+            </div>
+        );
     }
-  }
 
-  return null;
+    return null;
 };

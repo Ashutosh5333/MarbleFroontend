@@ -16,8 +16,12 @@ const CustomDatePicker = ({ onDateRangeChange, defaultStartDate, defaultEndDate 
     setEndDate(event.target.value);
   };
 
+  
+
   return (
-    <div className="w-[100%] py-4 sm:w-[80%] lg:w-[50%] m-auto flex sm:px-4 flex-col sm:flex-row mt-6 items-center gap-2 space-x-2 sm:space-x-4">
+    <>
+    <h2 className='text-center font-semibold pt-2 py-2'> Date Range Picker (Jan 2021 to Dec2023) </h2>
+     <div className="w-[100%] py-2 pb-2 sm:w-[80%] lg:w-[50%] m-auto flex sm:px-4 flex-col sm:flex-row mt-6 items-center gap-2 space-x-2 sm:space-x-4">
       <div className="flex items-center space-x-2">
         <label htmlFor="startDate" className="text-sm sm:text-md text-gray-600">Start Date :</label>
         <input type="date" id="startDate" value={startDate} onChange={handleStartDateChange} className="border text-gray-600 border-gray-300 rounded-md px-2 py-1" />
@@ -27,6 +31,8 @@ const CustomDatePicker = ({ onDateRangeChange, defaultStartDate, defaultEndDate 
         <input type="date" id="endDate" value={endDate} onChange={handleEndDateChange} className="border text-gray-600  border-gray-300 rounded-md px-2 py-1" />
       </div>
     </div>
+    </>
+   
   );
 };
 

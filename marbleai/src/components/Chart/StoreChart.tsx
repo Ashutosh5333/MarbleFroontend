@@ -1,36 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import { data } from "../../context/index";
-import { ChartTooltip } from "../Dashboard/ChartTooltip";
-import { CustomYAxisTick } from "../Dashboard/CustomYAxisTick";
-import { CustomLegend } from "../Dashboard/CutstomLegend";
-import CustomDatePicker from '../Dashboard/CustomDatePicker';
-import { DataItem } from '../../interface';
-
+import { ChartTooltip } from "../DashboardDetail/ChartTooltip";
+import { CustomYAxisTick } from "../DashboardDetail/CustomYAxisTick";
+import { CustomLegend } from "../DashboardDetail/CutstomLegend";
+import CustomDatePicker from '../DashboardDetail/CustomDatePicker';
+import { DataItem } from '../../interfaces';
 
 const StoreChart: React.FC = () => {
   const initialData: DataItem[] = [...data].sort((a: DataItem, b: DataItem) => {
     const [aMonth, aYear] = a.date.split(" ");
     const [bMonth, bYear] = b.date.split(" ");
+    // console.log("amo")
     const aDate = new Date(`${aYear} ${aMonth}`);
     const bDate = new Date(`${bYear} ${bMonth}`);
     return aDate.getTime() - bDate.getTime();
   });
 const [selectedData, setSelectedData] = useState<DataItem[]>(initialData);
   
-   const handleDateRangeChange = (startDate: string, endDate: string) => {
+
+  const handleDateRangeChange = (startDate: string, endDate: string) => {
+    // console.log("startDate+++++++++++++", startDate);
+    const start = new Date(startDate);
+    start.setHours(0, 0, 0, 0);
+    const end = new Date(endDate);
+    end.setHours(23, 59, 59, 999);
     const filteredData = initialData.filter((item) => {
       const itemDate = new Date(item.date);
-      const start = new Date(startDate);
-      const end = new Date(endDate);
       return itemDate >= start && itemDate <= end;
     });
+    // console.log("filteredData", filteredData);
     setSelectedData(filteredData);
   };
+  
   const defaultStartDate = initialData[0]?.date;
   const defaultEndDate = initialData[initialData.length - 1]?.date;
   
-  // console.log("filterdata",selectedData)
+
 
   return (
     <div>
@@ -101,6 +107,5 @@ const [selectedData, setSelectedData] = useState<DataItem[]>(initialData);
     </div>
   );
 };
-
 
 export default StoreChart;

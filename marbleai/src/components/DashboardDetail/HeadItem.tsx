@@ -31,15 +31,16 @@ export const HeadItem = ({ title, total, per, index }: any) => {
     setMenuHoveredIndex(-1);
   };
  
+
   return (
     <div
-      className={`rounded-lg cursor-pointer  px-4 md:px-6 py-4
+      className={`rounded-lg cursor-pointer  px-8 md:px-4 py-4
         ${index === 0 ? "bg-[#F1F1F1]" : ""}
         hover:bg-[#F1F1F1] mb-4 sm:mb-0`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="py-1 px-1  border-b-2 border-dashed flex justify-between items-center">
+      <div className="py-1  border-b-2 border-dashed flex justify-between items-center">
         <Tooltip
           placement="bottom-start"
           className="border border-blue-gray-50 text-black bg-white px-4 py-3 shadow-xl shadow-black/10"
@@ -64,20 +65,20 @@ export const HeadItem = ({ title, total, per, index }: any) => {
             </div>
           }
         >
-          <p className="font-semibold text-[#303030]">{title}</p>
+          <p className="font-semibold font-inter text-md text-[#303030]">{title}</p>
         </Tooltip>
 
         <p
           className={`text-[#70707A] ${isHovered ? "block" : "hidden"}
         hover:p-1 hover:bg-[#aeabab] rounded  p-1 relative`}
         >
-          <span className="  rounded focus:outline-none" onClick={toggleMenu}>
+          <span className=" rounded focus:outline-none" onClick={toggleMenu}>
             <FaPencilAlt />
           </span>
 
           {isOpen && (
             <div
-              className="fixed inset-0 sm:inset-auto lg:inset-auto z-50 flex items-center justify-center bg-opacity-50
+              className="MenuList fixed inset-0 sm:inset-auto lg:inset-auto z-50 flex items-center justify-center bg-opacity-50
               sm:top-40 sm:right-0 sm:left-20
               "
               onClick={toggleMenu}
@@ -117,8 +118,8 @@ export const HeadItem = ({ title, total, per, index }: any) => {
         </p>
       </div>
 
-      <div className="py-1 md:px-1 flex flex-row items-center gap-2">
-        <p className="font-bold text-[#303030] text-lg">{total}</p>
+      <div className="py-1 px-2 md:px-0 lg:px-1 flex flex-row items-center gap-2">
+        <p className="font-bold text-[#303030]  sm:text-sm lg:text-lg">{total}</p>
         <div className="flex items-center">
           <BiSolidUpArrow className="text-sm text-[#70707A]" />
           <p className="text-[#70707A] text-[.8rem] ml-1">{per}</p>

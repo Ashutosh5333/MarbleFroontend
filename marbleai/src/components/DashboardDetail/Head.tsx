@@ -8,7 +8,7 @@ const Head = ({ SetActive, ActiveStore }: any) => {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 px-4 lg:px-8 gap-4 lg:gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 px-4 lg:px-8 gap-2 lg:gap-8">
     {Headingdata.map((heading, index) => (
       <HeadItem
         key={index}

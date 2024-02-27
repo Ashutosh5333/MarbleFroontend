@@ -4,7 +4,7 @@ import Head from "./Head"
 import Skeleton from "../Skelton/Skeleton"
 
   
- const Dashboard = () => {
+ const DashboardData = () => {
   const [ActiveStore,SetActive] = useState(true)
   const [loading,SetLoading] = useState(false)
 
@@ -34,7 +34,8 @@ import Skeleton from "../Skelton/Skeleton"
    
       
     </>
+  
    )
  }
  
- export default Dashboard
+ export default DashboardData
