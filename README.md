@@ -123,4 +123,4 @@ Comparison ![chart](https://github.com/Ashutosh5333/MarbleFroontend/assets/10139
 
 
 ### Implmentation of Document
-  MarbleDocument [MarbleDocument](https://docs.google.com/document/d/1NcgoseesFf7ZFiBzuhU_BuKe0WD-Rjy6rgHJ7PTIIyE/edit) 
+  MarbleDocument [MarbleDocument](https://docs.google.com/document/d/1NcgoseesFf7ZFiBzuhU_BuKe0WD-Rjy6rgHJ7PTIIyE/edit?usp=sharing) 
