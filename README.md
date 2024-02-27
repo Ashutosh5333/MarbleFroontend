@@ -107,13 +107,20 @@ Comparison ![chart](https://github.com/Ashutosh5333/MarbleFroontend/assets/10139
 
 <br />
 
-![ChartClosed](https://github.com/Ashutosh5333/MarbleFroontend/assets/101393850/df332cc6-e014-40d4-8775-846efff6133d)
-
+![Skelton](https://github.com/Ashutosh5333/MarbleFroontend/assets/101393850/4d8255bf-e3ba-47a9-8a85-af05e903119e)
 
 <br />
 
 
+# Tech Stack Used
+
+- React js 
+- Tailwind CSS
+- Recharts
+- Tailwind material
+- React/icons
+- TypeScript
 
 
+### Implmentaion of Documenatation
 
-### Resources
