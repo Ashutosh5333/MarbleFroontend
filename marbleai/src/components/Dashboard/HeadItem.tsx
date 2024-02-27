@@ -30,10 +30,7 @@ export const HeadItem = ({ title, total, per, index }: any) => {
   const handleMenuMouseLeave = () => {
     setMenuHoveredIndex(-1);
   };
-  //  left-20 top-40
-  //      sm:top-30 sm:right-0 sm:left-40
-  //      lg:top-none lg:bottom-none lg:left-40 right-none
-
+ 
   return (
     <div
       className={`rounded-lg cursor-pointer  px-4 md:px-6 py-4
