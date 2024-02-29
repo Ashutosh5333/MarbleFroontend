@@ -24,7 +24,14 @@ Welcome to the Online Store Session project! This project provides tools for man
 
 ## Quick Start
 
-For Install nodemodules commands
+Clone the repository:
+
+```
+git clone https://github.com/Ashutosh5333/MarbleFroontend.git
+```
+
+
+For Install node modules commands:
 
 ```
 npm install
@@ -64,7 +71,7 @@ npm run build
 <br />
 <br />
 
-  # Overlay Comparsion 
+  # Overlay Comparison 
 
 Comparison ![chart](https://github.com/Ashutosh5333/MarbleFroontend/assets/101393850/8723d3c2-fec4-4bd1-a471-8344ae723ac5)
 
