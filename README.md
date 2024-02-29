@@ -30,14 +30,11 @@ Clone the repository:
 git clone https://github.com/Ashutosh5333/MarbleFroontend.git
 ```
 
-
 For Install node modules commands:
 
 ```
 npm install
 ```
-
-Run the following command to download the project:
 
 Once the setup is complete, navigate to the project folder and start your project with:
 
@@ -46,11 +43,6 @@ npm run dev
 ```
 Your application will be accessible at http://localhost:5173
 
-For build product commands
-
-```
-npm run build
-```
 
 ### Features
    1. Data visualization by months and year
@@ -130,4 +122,4 @@ Comparison ![chart](https://github.com/Ashutosh5333/MarbleFroontend/assets/10139
 
 
 ### Implmentation of Document
-  MarbleDocument [MarbleDocument](https://docs.google.com/document/d/1NcgoseesFf7ZFiBzuhU_BuKe0WD-Rjy6rgHJ7PTIIyE/edit?usp=sharing) 
+  Marble Document [MarbleDocument](https://docs.google.com/document/d/1NcgoseesFf7ZFiBzuhU_BuKe0WD-Rjy6rgHJ7PTIIyE/edit?usp=sharing) 
